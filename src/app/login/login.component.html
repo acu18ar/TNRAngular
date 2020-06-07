@@ -8,23 +8,34 @@
               <div class="card-header">
                   <h3>SignIN</h3>
               </div>
-              <div class="card-body">
-                  <img src="/img/estnr.jpg" alt="Escudo Transnaval" class="card-img-top mx-auto m-5 rounded-circle w-50">
-                  <form>
+              <div class="card-body" *ngIf="cargando">
+                  <!-- <img src="/img/estnr.jpg" alt="Escudo Transnaval" class="card-img-top mx-auto m-5 rounded-circle w-50"> -->
+                  <form [formGroup]="singInForm" (ngSubmit)="signin()">
                   <div class="form-group">
-                      <input type="text" name="username" placeholder="User Name" class="form-control">
+                      <input formControlName="userName" [ngClass]="{ 'is-invalid': f['userName'].invalid && f['userName'].touched }"
+                      type="text" name="userName" placeholder="User Name" class="form-control">
+                      <div *ngIf="f['userName'].invalid && f['userName'].touched" class="invalid-feedback">
+                        <div *ngIf="f['userName'].errors?.required">User Name is require</div>
+                      </div>
                   </div>
                   <div class="form-group">
-                      <input type="password" name="password" placeholder="Password" class="form-control">
+                      <input formControlName="password" [ngClass]="{ 'is-invalid': f['password'].invalid && f['password'].touched }"
+                      type="password" name="password" placeholder="Password" class="form-control">
+                      <div *ngIf="f['password'].invalid && f['password'].touched" class="invalid-feedback">
+                        <div *ngIf="f['password'].errors?.required">Password is require</div>
+                      </div>
                   </div>
                   <div class="form-group">
                       <img src="" alt="">
                   </div>
-                  <div class="form-group">
-                      <input type="text" name="captcha" placeholder="Ingrése Captcha" class="form-control">
+                  <div>
+                    <re-captcha (resolved)="resolved($event)"
+                      siteKey= "{{captcha.sitioWeb}}" formControlName="recaptchaReactive">
+                      </re-captcha>
                   </div>
+
                   <div class="form-group">
-                      <button class="btn btn-success btn-block">Ingresar</button>
+                      <button [disabled]="singInForm?.invalid" class="btn btn-success btn-block">Ingresar</button>
                   </div>
                   </form>
               </div>
@@ -32,3 +43,6 @@
       </div>
   </div>
 </div>
+<!-- dada el id de un user que te de el rol y los datos del usuario, las acciones que tenga ese rol -->
+<!-- dado el id de un usuario ver el ID de localidad -->
+<!-- dado el id de localidad ver los barcos que le pertenescan -->
