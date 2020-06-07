@@ -1,0 +1,54 @@
+<div class="container p-8">
+  <div class="row">
+      <div class="col-md-8 mx-auto">
+          <div class="card-body">
+              <!-- Para saber donde enviara los datos -->
+              <form action="" method="">
+                  <div class="form-group">
+                      <input type="text" class="form-control" name="username" placeholder="Nombre de Usurio" autofocus>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="email" placeholder="Correo Electronico" autofocus>
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" name="password" placeholder="Contraseña" autofocus>
+              </div>
+              <div class="form-group">
+                <label for="sel1">Selecciona Grado:</label>
+                <select class="form-control" id="sel1" name="id_title"  aria-placeholder=" ">
+                    <option>C.N.</option>
+                    <option>C.F.</option>
+                    <option>C.A.</option>
+                    <option>T.N.</option>
+                    <option>T.F.</option>
+                    <option>Alf.</option>
+
+                </select>
+                </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="first_name" placeholder="Nombre" autofocus>
+            </div>
+
+                  <div class="form-group">
+                      <input type="text" name = "first_name" class="form-control" placeholder="Apellido">
+                  </div>
+
+                  <div class="form-group">
+                  <label for="sel1">Selecciona Rol:</label>
+                  <select class="form-control" id="sel1" name="roles_id_roles"  aria-placeholder=" ">
+                      <option value="">
+                        <!-- para elegir el rol deacuerdo a la bd -->
+                      </option>
+
+                  </select>
+                  </div>
+
+                  <div class="form-group">
+                      <button class="btn btn-success btn-block">GUARDAR</button>
+                      <button class="btn btn-danger btn-block">CANCELAR</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>

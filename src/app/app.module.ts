@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { BuquesComponent } from './buques/buques.component';
 import { UsuariosComponent } from './usuarios/usuarios.component';
+import { AddComponent } from './usuarios/add/add.component';
+import { AddbuquesComponent } from './buques/addbuques/addbuques.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     BuquesComponent,
-    UsuariosComponent
+    UsuariosComponent,
+    AddComponent,
+    AddbuquesComponent
   ],
   imports: [
     BrowserModule,
