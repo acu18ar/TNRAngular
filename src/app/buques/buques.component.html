@@ -1,0 +1,125 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="/">TNR-TRACKER</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Unidades de Superficie
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/buques">Mostrar Unidades de Superficie </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/buques/add">Añadir Unidades de Superficie</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Trackers
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/trackes">Mostrar Rastreadores </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/trackers/add">Añadir Rastreadores</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Usuarios
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/users">Mostrar Usuarios </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/users/add">Añadir Usuarios</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Tripulaciones
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/crew">Mostrar Tripulación </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/crew/add">Añadir Tripulación</a>
+          </div>
+        </li>
+
+
+        <li class="nav-item active">
+          <a class="nav-link" href="/login">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/links/tracker1">Tracker</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container p-8">
+  <tr> </tr>
+  <h2>ADMINISTRACION DE UNIDADES DE SUPERFICE</h2>
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col" id="pruebalog">#</th>
+        <th scope="col">Codigo Unidad de Superficie</th>
+        <th scope="col">Nombre Unidad de Superficie</th>
+        <th scope="col">Descripcion</th>
+        <th scope="col">Tripulacion</th>
+        <th scope="col">Rastreador</th>
+        <th scope="col">Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr>
+        <td scope="row">number</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>
+          <a href="" class="btn btn-primary">Ver</a>
+        </td>
+        <td>
+          <!-- <a href="www.google.com" target="_blank">Comandante:ddfdsfsdfas </a> -->
+          <a href="" class="btn btn-success">Asginar</a>
+
+        </td>
+        <td>
+          <a href="" class="btn btn-danger">Delete U.S.</a>
+          <a href="" class="btn btn-secondary">Edit U.S.</a>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row">number</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="" class="btn btn-primary">Ver</a></td>
+        <td>
+          <a href="" class="btn btn-success">Asginar</a> </td>
+
+        <td>
+          <a href="" class="btn btn-danger">Delete U.S.</a>
+          <a href="" class="btn btn-secondary">Edit U.S.</a>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+<script>
+  console.log(document.getElementById('pruebalog').innerHTML);
+
+</script>
